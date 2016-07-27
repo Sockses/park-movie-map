@@ -55,6 +55,7 @@ function initMap() {
       // grab content for park's infowindow
       var contentString = '<div class="info-card">' +
       '<h4 class="card-title">' + park.movieTitle + '</h4>' +
+      '<span class = "#">' + park.movieCover + '</span>' + '<br>' +
       '<span class="label label-default">'+ park.movieYear + '</span>' +
       '<span class="label label-primary">'+ park.movieRating + '</span>' +
       '<p class="park-name">' + park.parkName + '</p>' +

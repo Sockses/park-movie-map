@@ -7,7 +7,8 @@ jsonpCallback({ "parks":
               "movieYear": "1993",
               "movieRating": "PG",
               "showDate": "Sun, July 10",
-              "quadrant": "ne"
+              "quadrant": "ne",
+              "movieCover": "<img src='img/sandlot.jpg'>"
             },
             { "parkName": "Brentwood Park",
               "parkAddress": "SE 60th & Duke St",
@@ -16,7 +17,8 @@ jsonpCallback({ "parks":
               "movieYear": "2011",
               "movieRating": "PG",
               "showDate": "Wed, July 13",
-              "quadrant": "se"
+              "quadrant": "se",
+              "movieCover": "<img src='img/megamind.jpg'>"
             },
             { "parkName": "Jackson Middle School",
               "parkAddress": "10625 SW 35th Ave",
@@ -25,7 +27,8 @@ jsonpCallback({ "parks":
               "movieYear": "2016",
               "movieRating": "PG",
               "showDate": "Thu, July 14",
-              "quadrant": "sw"
+              "quadrant": "sw",
+              "movieCover": "<img src='img/kungfupanda.jpg'>"
             },
             { "parkName": "Irving Park",
               "parkAddress": "NE 7th Ave & Fremont St",
@@ -34,7 +37,8 @@ jsonpCallback({ "parks":
               "movieYear": "2015",
               "movieRating": "PG-13",
               "showDate": "Fri, July 15",
-              "quadrant": "ne"
+              "quadrant": "ne",
+              "movieCover": "<img src='img/starwars.jpg'>"
             },
             { "parkName": "Glenhaven Park",
               "parkAddress": "NE 82nd Ave & Siskiyou St",
@@ -43,7 +47,8 @@ jsonpCallback({ "parks":
               "movieYear": "1981",
               "movieRating": "PG",
               "showDate": "Sat, July 16",
-              "quadrant": "ne"
+              "quadrant": "ne",
+              "movieCover": "<img src='img/indianajones.jpg'>"
             },
             { "parkName": "Hoyt Arboretum",
               "parkAddress": "4000 SW Fairview Blvd",
@@ -52,7 +57,8 @@ jsonpCallback({ "parks":
               "movieYear": "2012",
               "movieRating": "PG",
               "showDate": "Sat, July 16",
-              "quadrant": "sw"
+              "quadrant": "sw",
+              "movieCover": "<img src='img/thelorax.jpg'>"
             },
             { "parkName": "Denorval Unthank Park",
               "parkAddress": "510 N Shaver St",
@@ -61,7 +67,8 @@ jsonpCallback({ "parks":
               "movieYear": "2015",
               "movieRating": "PG-13",
               "showDate": "Sun, July 17",
-              "quadrant": "n"
+              "quadrant": "n",
+              "movieCover": "<img src='img/avengers.jpg'>"
             },
             { "parkName": "George Park",
               "parkAddress": "N Burr Ave & Fessenden St",
@@ -70,7 +77,8 @@ jsonpCallback({ "parks":
               "movieYear": "1986",
               "movieRating": "PG-13",
               "showDate": "Wed, July 20",
-              "quadrant": "n"
+              "quadrant": "n",
+              "movieCover": "<img src='img/ferrisbuellers.jpg'>"
             },
             { "parkName": "Woodstock Park",
               "parkAddress": "SE 47th & Steele St",
@@ -79,7 +87,8 @@ jsonpCallback({ "parks":
               "movieYear": "2015",
               "movieRating": "PG-13",
               "showDate": "Fri, July 22",
-              "quadrant": "se"
+              "quadrant": "se",
+              "movieCover": "<img src='img/starwars.jpg'>"
             },
             { "parkName": "Walker Stadium in Lents Park",
               "parkAddress": "SE 92nd & Holgate Blvd",
@@ -88,7 +97,8 @@ jsonpCallback({ "parks":
               "movieYear": "2013",
               "movieRating": "PG-13",
               "showDate": "Sat, July 23",
-              "quadrant": "se"
+              "quadrant": "se",
+              "movieCover": "<img src='img/42.jpg'>"
             }
           ]
 });

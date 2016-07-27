@@ -1,3 +1,9 @@
+img {
+  width: 299px;
+  height: 443px;
+  zoom: 30%;
+}
+
 .navbar {
   border-radius: 0;
 }
