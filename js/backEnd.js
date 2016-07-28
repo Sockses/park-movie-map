@@ -19,36 +19,7 @@ function initMap() {
     zoom: 12,
     scrollwheel: false
   });
-  // show the user location with blue icon
-  var userIcon = new google.maps.Marker({
-    map: map,
-    icon: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-    title: "Your current location"
-  });
-  // Try HTML5 geolocation.
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude,
-      };
-
-      userIcon.setPosition(pos);
-      map.setCenter(pos);
-    }, function() {
-      handleLocationError(true, userIcon, map.getCenter());
-    });
-  } else {
-    // Browser doesn't support Geolocation
-    handleLocationError(false, userIcon, map.getCenter());
-  }
-
-  function handleLocationError(browserHasGeolocation, userIcon, pos) {
-    userIcon.setPosition(pos);
-    userIcon.setContent(browserHasGeolocation ?
-      'Error: The Geolocation service failed.' :
-      'Error: Your browser doesn\'t support geolocation.');
-    }
+  
     // create global infowindow
     var infowindow = new google.maps.InfoWindow();
     // for each park
@@ -62,7 +33,7 @@ function initMap() {
       '<p class="park-name">' + park.parkName + '</p>' +
       '<p>' + park.parkAddress + '</p>' +
       '<p>' + park.showDate + '</p>' +
-      '</div>'
+      '</div>';
       // create cards for each park
       $('#movie-cards').append('<div class="col-sm-12 col-md-6 col-lg-3 all ' + park.quadrant + '"> <div class="card card-block"> ' + contentString + '</div></div>');
 
