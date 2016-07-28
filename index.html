@@ -16,7 +16,7 @@
 <body>
   <!--Navigation-->
   <nav class="navbar navbar-dark bg-primary">
-    <a class="navbar-brand" href="#"><img src="img/maps-logo.png" alt=""></a>
+    <a class="navbar-brand" href="#"><img id="navbar-icon" src="img/maps-logo.png" alt=""></a>
     <ul class="nav navbar-nav pull-sm-right">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -44,13 +44,10 @@
     </div>
   </div>
 
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-sm-6 map-embed" id="map">
-      </div> <!-- closes left column -->
-      <div id="capture">
-      </div>
-      <div class="col-sm-6">
+
+      <div class="col-sm-12">
         <h3 class="text-lg-center m-t-2">Find a movie by neighborhood</h3>
         <div class="location-btns">
           <button type="button" class="btn btn-outline" id="all">All</button>
@@ -60,13 +57,17 @@
           <button type="button" class="btn btn-outline" id="ne">NE</button>
         </div>
 
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <div id="movie-cards"></div>
           </div>
         </div>
 
       </div> <!-- closes right column -->
+      <div class="col-sm-12 map-embed" id="map">
+      </div> <!-- closes left column -->
+      <div id="capture">
+      </div>
     </div> <!-- closes row class -->
   </div> <!-- closes container-fluid class -->
   <footer>

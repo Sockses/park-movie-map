@@ -16,7 +16,8 @@ var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 45.52, lng: -122.681944},
-    zoom: 12
+    zoom: 12,
+    scrollwheel: false
   });
   // show the user location with blue icon
   var userIcon = new google.maps.Marker({
@@ -55,16 +56,15 @@ function initMap() {
       // grab content for park's infowindow
       var contentString = '<div class="info-card">' +
       '<h4 class="card-title">' + park.movieTitle + '</h4>' +
-      '<span class = "#">' + park.movieCover + '</span>' + '<br>' +
+      park.movieCover +
       '<span class="label label-default">'+ park.movieYear + '</span>' +
       '<span class="label label-primary">'+ park.movieRating + '</span>' +
       '<p class="park-name">' + park.parkName + '</p>' +
       '<p>' + park.parkAddress + '</p>' +
-      '<a href="#" class="card-link pull-sm-right">View Park</a>' +
       '<p>' + park.showDate + '</p>' +
       '</div>'
       // create cards for each park
-      $('#movie-cards').append('<div class="col-sm-12 col-md-6 col-lg-6 all ' + park.quadrant + '"> <div class="card card-block"> ' + contentString + '</div></div>');
+      $('#movie-cards').append('<div class="col-sm-12 col-md-6 col-lg-3 all ' + park.quadrant + '"> <div class="card card-block"> ' + contentString + '</div></div>');
 
       // create marker for each park
       var marker = new google.maps.Marker({
